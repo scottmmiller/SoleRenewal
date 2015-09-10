@@ -1,0 +1,262 @@
+.font-thin {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 200;
+
+}
+
+.font-semibold {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 600;
+}
+
+.font-light {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 300;
+}
+
+* {
+	position: relative;
+}
+
+html, body {
+   height: 100%;
+   width: 100%;
+}
+
+body {
+   background-color: #2f2f2f;
+   font-family: 'Titillium Web', sans-serif;
+   font-weight: normal;
+   overflow-x: hidden;
+   -webkit-font-smoothing: antialiased !important;
+}
+
+.justify-text {
+   text-align: justify;
+}
+
+/* navbar */
+.navbar {
+	background-color: #e4e6e5;
+	background-color: rgba( 228, 230, 229, .85 );
+	border-bottom: 0 none;
+	font-size: 12px;
+	transition: .25s all linear;
+}
+
+.navbar.inv {
+	background-color: rgba( 0, 0, 0, .5 );
+	border-bottom: 1px solid #bfbfbf;
+}
+
+.navbar .nav a {
+	color: #5f5f5f;
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 600;
+	transition: all .5 linear;
+}
+
+.navbar.inv a {
+	color: #e4e6e5;
+}
+
+.navbar-responsive-collapse {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.nav li {
+	text-align: center;
+	white-space: nowrap;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+	background-color: inherit;
+	outline: none;
+}
+
+.navbar-brand {
+	padding: 8px;
+}
+
+@media (max-width: 767px) {
+
+	.nav li {
+		text-align: left;
+		white-space: nowrap;
+	}
+
+	.navbar-responsive-collapse  {
+		width: 100%;
+	}
+
+	.active-menu {
+		display: none !important;
+	}
+
+	.navbar-toggle {
+		margin-right: 10px;
+	}
+
+	.navbar {
+		background-color: #e4e6e5 !important;
+		padding: 0;
+	}
+
+	.navbar .nav a {
+		color: #e4e6e5;
+		font-size: 16px;
+		padding-left: 0;
+	}
+
+	.icon {
+		margin-right: 12px;
+	}
+
+	.nav li[data-section="1"],
+	.nav li[data-section="5"] {
+		background-color: #2f2f2f;
+	}
+
+	.nav li[data-section="2"] {
+		background-color: #1abc9c;
+	}
+
+	.nav li[data-section="3"] {
+		background-color: #e74c3c;
+	}
+
+	.nav li[data-section="4"] {
+		background-color: #34495e;
+	}
+
+	.nav li[data-section="4"] {
+		background-color: #e67e22;
+	}
+
+	.navbar-brand {
+		margin: 0;
+		text-align: left;
+	}
+} /* END navbar */
+
+/* navbar indication bar active-menu*/
+.active-menu {
+	background-color: #4e4e4e;
+	content: '.';
+	display: block;
+	height: 5px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	transition: all .5 linear;
+	width: 1%;
+	z-index: 9;
+}
+
+.inv .active-menu {
+	background-color: #e4e6e5;
+}
+
+.special-active-menu {
+	z-index: 10;
+}
+
+#special-active-menu-1,
+#special-active-menu-6 {
+	background-color: #4e4e4e !important;
+}
+
+#special-active-menu-2 {
+	background-color: #1abc9c !important;
+}
+
+#special-active-menu-3 {
+	background-color: #e74c3c !important;
+}
+
+#special-active-menu-4 {
+	background-color: #34495e !important;
+}
+
+#special-active-menu-5 {
+	background-color: #e67e22 !important;
+}
+/* END navbar indication bar active-menu*/
+
+.section {
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding-bottom: 65px;
+	padding-top: 50px;
+	text-align: center;
+}
+
+#section-1 {
+	background-image: url('../images/bg2.jpg');
+	color: #000000;
+	height: 45em;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	background-attachment: relative;
+	background-position: center center;
+}
+
+#section-1 h1 {
+	/*padding-top: 130px;*/
+}
+
+@media (max-width: 991px) {
+	#section-1 {
+		background-position: -70% 0, 170% 0;
+	}
+}
+
+/* home-row-1*/
+#home-row-1 {
+	padding-top: 25px;
+}
+
+#home-row-1 {
+	/*font-family: 'Anime Ace 2.0 BB', arial;
+	-webkit-text-stroke: 1px #000;*/
+	color: #ffffff;
+	/*text-shadow:
+		3px 3px 0 #000,
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;*/
+}
+
+#home-row-1 h1 {
+	font-size: 54px;
+}
+
+#home-row-1 h4 {
+	font-size: 32px;
+}
+
+@media (max-width: 767px) {
+	#home-row-1 {
+		padding-top: 16px;
+	}
+
+	#home-row-1 h1 {
+		font-size: 35px;
+	}
+
+	#home-row-1 h4 {
+		font-size: 21px;
+	}
+}
+/* END home-row-1*/
